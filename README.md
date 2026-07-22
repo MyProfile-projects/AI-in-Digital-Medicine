@@ -80,29 +80,87 @@ python code/01_ecg_visualization.py
 
 ---
 
-## Recommended teaching workflow
+## What should I do here?
 
-1. Start with the clinical question.
-2. Open the corresponding dataset and discuss its structure.
-3. Run the code template.
-4. Interpret the output together with students.
-5. Discuss limitations, possible sources of error, and clinical safety.
-6. Ask the students to write a brief conclusion using medical terminology.
+If you opened this repository from the textbook or course materials, you can use it to run small practical examples in digital medicine. You do not need to build an AI system from scratch. Choose a topic, open the corresponding script, run it, and interpret the result.
 
-The goal is not programming from scratch, but understanding the connection between **data → algorithm → metric → clinical interpretation → limitation**.
+## How to use this repository
 
----
+This repository contains educational Python code templates and synthetic datasets for practical assignments in AI and digital medicine.
 
-## Minimal software requirements
+If you are visiting this repository for the first time, follow these steps:
 
-- Python 3.10 or higher
-- Jupyter Notebook or Google Colab, optional
-- `numpy`
-- `pandas`
-- `matplotlib`
-- `scikit-learn`
+1. **Choose a learning module**
 
-Additional packages such as `wfdb`, `pydicom`, `SimpleITK`, `PyTorch`, `FAISS`, or `Chroma` may be used in advanced classes, but they are not required for the basic version of this repository.
+   Open the table above and select the topic you want to study:
+
+   - ECG signal visualization;
+   - ECG classification;
+   - medical-image segmentation;
+   - clinical NLP / RAG;
+   - EEG / BCI signal visualization;
+   - molecular screening.
+
+2. **Open the corresponding code file**
+
+   Go to the `code/` folder and open the Python file for the selected topic.
+
+   For example:
+
+   - `code/01_ecg_visualization.py` — ECG signal visualization;
+   - `code/02_ecg_classification.py` — ECG classification;
+   - `code/03_dice_segmentation.py` — Dice and IoU calculation;
+   - `code/04_mini_rag.py` — simple retrieval-based search;
+   - `code/05_eeg_visualization.py` — EEG signal visualization;
+   - `code/06_molecular_screening.py` — molecular candidate ranking.
+
+3. **Check the required dataset**
+
+   Each code template uses a file from the `data/` folder.
+
+   For example:
+
+   - ECG files are located in `data/ecg/`;
+   - segmentation masks are located in `data/segmentation/`;
+   - synthetic clinical text fragments are located in `data/nlp/`;
+   - EEG files are located in `data/eeg/`;
+   - molecular data are located in `data/molecules/`.
+
+4. **Install the required Python libraries**
+
+   The basic version requires:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+5. **Run the selected script from the repository root**
+
+   For example:
+
+   ```bash
+   python code/01_ecg_visualization.py
+   ```
+
+   It is important to run the script from the main repository folder so that the relative paths to `data/` work correctly.
+
+6. **Look at the result**
+
+   Depending on the module, the script will produce:
+
+   - a graph of a biomedical signal;
+   - classification metrics;
+   - Dice / IoU values;
+   - retrieved text fragments;
+   - a ranked table of molecular candidates.
+
+7. **Answer the questions in the code**
+
+   At the end of each script there are short control questions. They help interpret the result and understand the limitations of the method.
+
+8. **Remember the educational purpose**
+
+   The code and datasets are simplified educational examples. They are not intended for diagnosis, treatment, prognosis, triage, or clinical decision-making.
 
 ---
 
