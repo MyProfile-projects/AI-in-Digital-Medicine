@@ -87,7 +87,7 @@ python code/01_ecg_visualization.py
 3. Run the code template.
 4. Interpret the output together with students.
 5. Discuss limitations, possible sources of error, and clinical safety.
-6. Ask students to write a short conclusion in medical language.
+6. Ask the students to write a brief conclusion using medical terminology.
 
 The goal is not programming from scratch, but understanding the connection between **data → algorithm → metric → clinical interpretation → limitation**.
 
