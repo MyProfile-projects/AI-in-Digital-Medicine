@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f1b3d"/>
+      <stop offset="55%" stop-color="#1a2a5e"/>
+      <stop offset="100%" stop-color="#3b1f6e"/>
+    </linearGradient>
+    <linearGradient id="pulse" x1="0%" y1="0%" x2="100%">
+      <stop offset="0%" stop-color="#00e5ff"/>
+      <stop offset="50%" stop-color="#7b68ee"/>
+      <stop offset="100%" stop-color="#ff5aa5"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00e5ff" stop-opacity="0.55"/>
+      <stop offset="40%" stop-color="#7b68ee" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#7b68ee" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft" x="-150%" y="-150%" width="400%" height="400%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="bigsoft" x="-200%" y="-200%" width="500%" height="500%">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="300" fill="url(#bg)"/>
+
+  <g stroke="#ffffff" stroke-opacity="0.05">
+    <path d="M0 60 H1200 M0 120 H1200 M0 180 H1200 M0 240 H1200"/>
+    <path d="M100 0 V300 M250 0 V300 M400 0 V300 M550 0 V300 M700 0 V300 M850 0 V300 M1000 0 V300 M1150 0 V300"/>
+  </g>
+
+  <circle cx="1000" cy="150" r="200" fill="url(#halo)">
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="4s" repeatCount="indefinite"/>
+  </circle>
+
+  <g filter="url(#bigsoft)" opacity="0.8">
+    <circle cx="920" cy="120" r="16" fill="#00e5ff"/>
+    <circle cx="990" cy="78" r="20" fill="#7b68ee"/>
+    <circle cx="1080" cy="105" r="14" fill="#00e5ff"/>
+    <circle cx="1098" cy="180" r="17" fill="#ff5aa5"/>
+    <circle cx="1015" cy="218" r="15" fill="#7b68ee"/>
+    <circle cx="928" cy="192" r="13" fill="#00e5ff"/>
+  </g>
+
+  <g stroke="#9d8cff" stroke-opacity="0.75" stroke-width="2.5" stroke-linecap="round">
+    <line x1="920" y1="120" x2="990" y2="78"/>
+    <line x1="990" y1="78" x2="1080" y2="105"/>
+    <line x1="1080" y1="105" x2="1098" y2="180"/>
+    <line x1="1098" y1="180" x2="1015" y2="218"/>
+    <line x1="1015" y1="218" x2="928" y2="192"/>
+    <line x1="928" y1="192" x2="920" y2="120"/>
+    <line x1="990" y1="78" x2="1015" y2="218"/>
+    <line x1="1080" y1="105" x2="1015" y2="218"/>
+  </g>
+
+  <g filter="url(#soft)">
+    <circle cx="920" cy="120" r="9" fill="#00e5ff"/>
+    <circle cx="990" cy="78" r="12" fill="#a5b4ff"/>
+    <circle cx="1080" cy="105" r="8" fill="#00e5ff"/>
+    <circle cx="1098" cy="180" r="10" fill="#ff5aa5"/>
+    <circle cx="1015" cy="218" r="9" fill="#7b68ee"/>
+    <circle cx="928" cy="192" r="7" fill="#00e5ff"/>
+  </g>
+
+  <path d="M40 220 H200 l12 -34 l14 56 l13 -66 l14 80 l13 -36 H400 l12 -26 l13 40 l13 -14 H560
+           l12 -34 l14 56 l13 -66 l14 80 l13 -36 H760 l12 -26 l13 40 l13 -14 H900 H1160"
+        fill="none" stroke="url(#pulse)" stroke-width="4.5"
+        stroke-linecap="round" stroke-linejoin="round" filter="url(#soft)" opacity="0.95"/>
+
+  <text x="60" y="118" font-family="Georgia, 'Times New Roman', serif" font-size="56" font-weight="bold" fill="#ffffff">AI in Digital Medicine</text>
+
+  <text x="62" y="163" font-family="Arial, sans-serif" font-size="21" fill="#c9d4ff">Artificial intelligence and machine learning in modern medicine</text>
+
+  <text x="62" y="262" font-family="Arial, sans-serif" font-size="15" fill="#8fa3e8" letter-spacing="2">ECG · SEGMENTATION · CLINICAL NLP · EEG · MOLECULAR SCREENING</text>
+
+  <rect x="62" y="276" width="70" height="4" rx="2" fill="#00e5ff"/>
+  <rect x="140" y="276" width="4" height="4" rx="2" fill="#7b68ee"/>
+  <rect x="152" y="276" width="4" height="4" rx="2" fill="#ff5aa5"/>
+</svg>
+
