@@ -2,8 +2,6 @@
 
 <img src="assets/banner_eng.svg" alt="AI in Digital Medicine" width="100%">
 
-# AI in Digital Medicine
-
 ### Educational code and synthetic datasets for learning artificial intelligence in modern medicine
 
 **English** | [Русский](README.md)
