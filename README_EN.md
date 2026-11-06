@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/banner.svg" alt="AI in Digital Medicine" width="100%">
+<img src="assets/banner_eng.svg" alt="AI in Digital Medicine" width="100%">
 
 # AI in Digital Medicine
 
