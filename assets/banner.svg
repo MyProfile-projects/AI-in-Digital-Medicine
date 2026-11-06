@@ -1,10 +1,84 @@
-<svg width="1400" height="420" viewBox="0 0 1400 420" fill="none" xmlns="http://www.w3.org/2000/svg">
-<defs><linearGradient id="bg" x1="0" y1="0" x2="1400" y2="420"><stop stop-color="#111827"/><stop offset="0.48" stop-color="#312E81"/><stop offset="1" stop-color="#7C3AED"/></linearGradient><radialGradient id="g" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1070 120) rotate(140) scale(520 300)"><stop stop-color="#34D399" stop-opacity="0.62"/><stop offset="1" stop-color="#34D399" stop-opacity="0"/></radialGradient></defs>
-<rect width="1400" height="420" rx="34" fill="url(#bg)"/><rect width="1400" height="420" rx="34" fill="url(#g)"/>
-<g opacity="0.24" stroke="#EDE9FE" stroke-width="2"><path d="M900 75 C975 40 1055 70 1115 132 C1170 190 1245 188 1310 145"/><path d="M900 185 C980 148 1050 172 1115 230 C1170 282 1250 270 1310 228"/><path d="M900 295 C985 255 1065 282 1130 340 C1180 382 1250 360 1310 326"/></g>
-<g opacity="0.9"><circle cx="925" cy="82" r="7" fill="#34D399"/><circle cx="1048" cy="70" r="7" fill="#34D399"/><circle cx="1110" cy="135" r="7" fill="#34D399"/><circle cx="1210" cy="180" r="7" fill="#34D399"/><circle cx="910" cy="185" r="7" fill="#34D399"/><circle cx="1040" cy="170" r="7" fill="#34D399"/><circle cx="1130" cy="245" r="7" fill="#34D399"/><circle cx="1265" cy="250" r="7" fill="#34D399"/><circle cx="925" cy="292" r="7" fill="#34D399"/><circle cx="1055" cy="280" r="7" fill="#34D399"/><circle cx="1150" cy="345" r="7" fill="#34D399"/><circle cx="1280" cy="338" r="7" fill="#34D399"/></g>
-<g transform="translate(86 84)"><path d="M0 120 C55 120 50 55 93 55 C135 55 120 185 170 185 C215 185 210 120 260 120" stroke="#34D399" stroke-width="10" stroke-linecap="round" fill="none"/><path d="M35 120 L62 120 L77 90 L101 165 L126 120 L260 120" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.95"/><circle cx="305" cy="120" r="56" stroke="#A78BFA" stroke-width="8" fill="none"/><path d="M305 74 V166 M259 120 H351" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round"/></g>
-<text x="90" y="285" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="56" font-weight="800">AI in Digital Medicine</text>
-<text x="92" y="333" fill="#D1FAE5" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="500">Educational Python templates · Synthetic medical data · Clinical interpretation</text>
-<text x="92" y="365" fill="#DDD6FE" font-family="Inter, Arial, sans-serif" font-size="18">ECG · Segmentation · NLP/RAG · EEG/BCI · Molecular screening</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f1b3d"/>
+      <stop offset="55%" stop-color="#1a2a5e"/>
+      <stop offset="100%" stop-color="#3b1f6e"/>
+    </linearGradient>
+    <linearGradient id="pulse" x1="0%" y1="0%" x2="100%">
+      <stop offset="0%" stop-color="#00e5ff"/>
+      <stop offset="50%" stop-color="#7b68ee"/>
+      <stop offset="100%" stop-color="#ff5aa5"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00e5ff" stop-opacity="0.55"/>
+      <stop offset="40%" stop-color="#7b68ee" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#7b68ee" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft" x="-150%" y="-150%" width="400%" height="400%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="bigsoft" x="-200%" y="-200%" width="500%" height="500%">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="300" fill="url(#bg)"/>
+
+  <g stroke="#ffffff" stroke-opacity="0.05">
+    <path d="M0 60 H1200 M0 120 H1200 M0 180 H1200 M0 240 H1200"/>
+    <path d="M100 0 V300 M250 0 V300 M400 0 V300 M550 0 V300 M700 0 V300 M850 0 V300 M1000 0 V300 M1150 0 V300"/>
+  </g>
+
+  <circle cx="1000" cy="150" r="200" fill="url(#halo)">
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="4s" repeatCount="indefinite"/>
+  </circle>
+
+  <g filter="url(#bigsoft)" opacity="0.8">
+    <circle cx="920" cy="120" r="16" fill="#00e5ff"/>
+    <circle cx="990" cy="78" r="20" fill="#7b68ee"/>
+    <circle cx="1080" cy="105" r="14" fill="#00e5ff"/>
+    <circle cx="1098" cy="180" r="17" fill="#ff5aa5"/>
+    <circle cx="1015" cy="218" r="15" fill="#7b68ee"/>
+    <circle cx="928" cy="192" r="13" fill="#00e5ff"/>
+  </g>
+
+  <g stroke="#9d8cff" stroke-opacity="0.75" stroke-width="2.5" stroke-linecap="round">
+    <line x1="920" y1="120" x2="990" y2="78"/>
+    <line x1="990" y1="78" x2="1080" y2="105"/>
+    <line x1="1080" y1="105" x2="1098" y2="180"/>
+    <line x1="1098" y1="180" x2="1015" y2="218"/>
+    <line x1="1015" y1="218" x2="928" y2="192"/>
+    <line x1="928" y1="192" x2="920" y2="120"/>
+    <line x1="990" y1="78" x2="1015" y2="218"/>
+    <line x1="1080" y1="105" x2="1015" y2="218"/>
+  </g>
+
+  <g filter="url(#soft)">
+    <circle cx="920" cy="120" r="9" fill="#00e5ff"/>
+    <circle cx="990" cy="78" r="12" fill="#a5b4ff"/>
+    <circle cx="1080" cy="105" r="8" fill="#00e5ff"/>
+    <circle cx="1098" cy="180" r="10" fill="#ff5aa5"/>
+    <circle cx="1015" cy="218" r="9" fill="#7b68ee"/>
+    <circle cx="928" cy="192" r="7" fill="#00e5ff"/>
+  </g>
+
+  <path d="M40 220 H200 l12 -34 l14 56 l13 -66 l14 80 l13 -36 H400 l12 -26 l13 40 l13 -14 H560
+           l12 -34 l14 56 l13 -66 l14 80 l13 -36 H760 l12 -26 l13 40 l13 -14 H900 H1160"
+        fill="none" stroke="url(#pulse)" stroke-width="4.5"
+        stroke-linecap="round" stroke-linejoin="round" filter="url(#soft)" opacity="0.95"/>
+
+  <text x="60" y="118" font-family="Georgia, 'Times New Roman', serif" font-size="56" font-weight="bold" fill="#ffffff">ИИ в цифровой медицине</text>
+
+  <text x="62" y="163" font-family="Arial, sans-serif" font-size="21" fill="#c9d4ff">Искусственный интеллект и машинное обучение в современной медицине</text>
+
+  <text x="62" y="262" font-family="Arial, sans-serif" font-size="15" fill="#8fa3e8" letter-spacing="2">ЭКГ · СЕГМЕНТАЦИЯ · КЛИНИЧЕСКИЙ NLP · ЭЭГ · МОЛЕКУЛЯРНЫЙ СКРИНИНГ</text>
+
+  <rect x="62" y="276" width="70" height="4" rx="2" fill="#00e5ff"/>
+  <rect x="140" y="276" width="4" height="4" rx="2" fill="#7b68ee"/>
+  <rect x="152" y="276" width="4" height="4" rx="2" fill="#ff5aa5"/>
 </svg>
