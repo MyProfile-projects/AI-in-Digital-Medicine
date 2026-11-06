@@ -2,8 +2,6 @@
 
 <img src="assets/banner.svg" alt="AI in Digital Medicine" width="100%">
 
-# AI in Digital Medicine
-
 ### Обучающие материалы и синтетические данные для изучения искусственного интеллекта в современной медицине
 
 [English](README_EN.md) | **Русский**
